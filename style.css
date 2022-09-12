@@ -93,8 +93,14 @@ body {
     background-color: hsl(215, 18%, 19%);
     color: var(--light-gray);
     border-radius: 50%;
-    padding: 0.75rem 1rem;
+    padding: 0.625rem 1rem;
     border: none;
+}
+
+.aside-rating-btns>*:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+    color: #fff;
 }
 
 .submit-button {
@@ -106,8 +112,15 @@ body {
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
+    margin: 0.75rem 0 0.75rem 0;
 }
 
+
+.submit-button:hover {
+    cursor: pointer;
+    color: var(--orange);
+    background-color: #fff;
+}
 
 /* leave it to none */
 
