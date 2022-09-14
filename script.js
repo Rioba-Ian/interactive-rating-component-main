@@ -34,9 +34,11 @@ function storeAnswer(answerValue) {
 }
 
 submitBtn.addEventListener('click', () => {
-    scoreCard.style.display = 'none'
-    thankyou.style.display = 'flex'
-    storeAnswer(answerValue)
+    if (answerValue !== '') {
+        scoreCard.style.display = 'none'
+        thankyou.style.display = 'flex'
+        storeAnswer(answerValue)
+    }
     // console.log("it works");
 })
 
