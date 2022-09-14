@@ -90,7 +90,7 @@ body {
 
 }
 
-.aside-rating-btns>* {
+.select {
     background-color: hsl(215, 18%, 19%);
     color: var(--light-gray);
     border-radius: 50%;
@@ -98,15 +98,21 @@ body {
     border: none;
 }
 
-.aside-rating-btns>*:visited {
-    background-color: red;
-}
-
-.aside-rating-btns>*:hover {
+.select:hover {
     background-color: var(--orange);
     cursor: pointer;
     color: #fff;
 }
+
+.select:active,
+.select:focus,
+.select.active,
+.select:focus {
+    background-color: var(--medium-gray);
+    color: #fff;
+    transition: all 0.5s;
+}
+
 
 .submit-button {
     width: 100%;
@@ -121,11 +127,16 @@ body {
 }
 
 
-.submit-button:hover {
+.submit-button:hover,
+.submit-button:active,
+.submit-button:focus {
     cursor: pointer;
     color: var(--orange);
     background-color: #fff;
 }
+
+
+
 
 /* leave it to none */
 
