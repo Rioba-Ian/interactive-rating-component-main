@@ -19,6 +19,7 @@ ratings.forEach((rating, index) => {
         console.log(current);
 
         if (current === 0) {
+
             console.error("Nothing has been clicked");
         }
         else {
